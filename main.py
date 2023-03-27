@@ -73,7 +73,7 @@ update_categorie = Entry(gui)
 update_categorie.insert(0,"Catégorie à modifier")
 update_categorie.grid(row=5,column=10,padx= 5,pady=3,)
 
-
+#Fonctions
 def ajouter_produit():
         nom = add_name.get()
         description = add_desc.get()
@@ -111,6 +111,10 @@ def modifier_produit():
         db.commit()
         cursor.close()
 
+
+messagebox.showinfo('Modified', 'Produit modifié !')
+
+#Fonction pour l'affichage des tableaux
 def afficher_cat():
     display_cat = Toplevel()
     display_cat.title('Affichage des catégories')
