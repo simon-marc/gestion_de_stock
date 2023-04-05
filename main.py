@@ -16,7 +16,7 @@ white = '#ffffff'
 black = ''#000000''
 
 gui = Tk()
-gui.geometry('700x300')
+gui.geometry('800x400')
 gui.title('Stock Manager')
 gui.resizable(False,False)
 gui.configure(bg=black)
@@ -112,7 +112,7 @@ def modifier_produit():
         cursor.close()
 
 
-messagebox.showinfo('Modified', 'Produit modifié !')
+        messagebox.showinfo('Modified', 'Produit modifié !')
 
 #Fonction pour l'affichage des tableaux
 def afficher_cat():
